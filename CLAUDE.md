@@ -97,3 +97,13 @@ script/stage    # internal-only: builds with a staging baseurl and force-pushes 
 - **Changing the deck/site config**: edit `_config.yml`; remember `reveal:` block changes may need corresponding wiring in `_includes/script.html` to take effect.
 - **Changing global slide chrome** (theme, scripts, meta): edit `_includes/head.html` / `_includes/script.html`, not the layouts directly.
 - **Upgrading reveal.js**: it's vendored under `node_modules/reveal.js` and pinned via `package-lock.json`; update both together rather than relying on `npm install`.
+
+## Cross-device context (Claude Code on PC, web, and mobile)
+
+Claude Code on the web/mobile (`claude.ai/code`, iOS app) runs in ephemeral cloud containers cloned fresh from this Git repo for each session. These containers have **no access** to local-only sources like Google Drive, iCloud, or an Obsidian vault — nothing outside the repo persists between sessions or devices.
+
+Practical consequence: this `CLAUDE.md` (and any other docs committed to the repo) is the **only** thing that reliably carries context between your PC, work machine, web, and phone. It is not a duplicate of an external "second brain" — it's the canonical copy for this project.
+
+- Keep personal/exploratory notes (Obsidian, etc.) wherever you already do.
+- When something becomes relevant project context — conventions, recurring decisions, things you don't want to re-explain — move it into this file (or a `docs/` file) and commit/push it. That's what makes it available automatically in every future session, on any device.
+- Don't expect Drive/iCloud sync, or an Obsidian vault, to be reachable from a Claude Code web/mobile session — there's no mount/sync mechanism for that.
