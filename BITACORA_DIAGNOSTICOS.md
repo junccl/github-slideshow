@@ -71,4 +71,34 @@ No es causa directa, pero un motor que no alcanza temperatura normal puede prolo
 
 ---
 
+## 2026-07-04 (análisis cruzado: informes del vehículo + diagnósticos)
+
+Cruce entre el Informe Autofact / Registro Civil (`FICHA_VEHICULO.md`) y las lecturas de escáner registradas arriba.
+
+### Kilometraje estimado actual
+
+- Último registro oficial: 125.572 km (04-12-2024, revisión técnica)
+- Uso histórico promedio: ~6.200 km/año ("bajo")
+- **Estimado a julio 2026: ~135.000-138.000 km**
+
+### Relevancia para el P1135 y el termostato
+
+A este kilometraje, tanto el sensor A/F como el termostato son piezas originales del vehículo (fabricado en 2006, sin registro de reemplazo en los informes). Es el rango típico donde ambos componentes empiezan a fallar por desgaste — coincide con lo diagnosticado, no es casualidad que aparezcan cerca uno del otro.
+
+### ⚠️ Plazo importante: Revisión Técnica
+
+- **Mes de renovación: Noviembre** (según Informe Autofact)
+- El ítem **GA (emisión de gases)** de la revisión técnica puede verse afectado por una mezcla aire-combustible mal calibrada — justamente lo que controla el sensor A/F fallando (P1135)
+- Historial de revisión técnica del vehículo es mayormente limpio (rechazos previos solo por IV/luces, y frenos una vez en 2018, ya resueltos) — nunca ha fallado por emisiones, por lo que conviene resolver el P1135 **antes de noviembre** para no interrumpir ese historial
+
+### Situación legal/administrativa (sin relación con lo mecánico, para descartar sorpresas)
+
+Sin choques ni remates registrados, sin encargo por robo, sin multas, sin limitaciones al dominio. El presupuesto puede enfocarse 100% en mecánica.
+
+### Estado
+
+- [ ] Pendiente: reparar sensor A/F y confirmar termostato antes de noviembre 2026 (revisión técnica)
+
+---
+
 <!-- Agregar nuevas entradas arriba de esta línea, con el formato: fecha, herramienta, código(s), interpretación, acción y estado -->
