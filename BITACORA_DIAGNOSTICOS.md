@@ -101,4 +101,30 @@ Sin choques ni remates registrados, sin encargo por robo, sin multas, sin limita
 
 ---
 
+## 2026-07-04 (búsqueda de repuesto: sensor A/F Bank1 Sensor1)
+
+### Códigos correctos a buscar
+
+| Marca | Código | Nota |
+|---|---|---|
+| Denso | **234-4624** | Camry 2003-2006, upstream (confirmado) |
+| Denso | **234-4622** | Camry (rango de años más amplio), upstream |
+| Toyota OEM | **89467-06030** / **89467-33040** | Sensor A/F delantero |
+
+### Advertencia: sensores "universales" NO sirven
+
+Se revisó una publicación (Repuestos Quinteros, código 86-6209, Denso 234-6209L) que se anuncia como "sensor de oxígeno **universal**, 4 vías" y lista compatibilidad con decenas de marcas y motores distintos (Honda, Chevrolet, Dodge, Mitsubishi, Mercedes-Benz, etc.), a pesar de describirse como "Sensor 1 primario / Upstream".
+
+**Conclusión:** un sensor A/F de banda ancha tiene una calibración específica por motor/ECU y no puede ser genuinamente "universal" entre marcas tan dispares. Esa referencia (234-6209L) es casi seguro un sensor de oxígeno narrowband genérico, **no** el sensor A/F que necesita el 2AZ-FE. Descartada para esta reparación.
+
+### Cómo buscar correctamente
+
+Buscar por código exacto (`Denso 234-4624`, `Denso 234-4622` o `sensor A/F 89467`) en vez de términos genéricos como "sensor oxígeno Camry", para evitar que aparezcan sensores universales/narrowband mal etiquetados.
+
+### Estado
+
+- [ ] Pendiente: confirmar y comprar sensor con alguno de los códigos de arriba, verificado contra el número Toyota antes de pagar
+
+---
+
 <!-- Agregar nuevas entradas arriba de esta línea, con el formato: fecha, herramienta, código(s), interpretación, acción y estado -->
